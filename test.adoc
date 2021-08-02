@@ -1,0 +1,140 @@
+= Test AsciiDoc Features
+:revdate: August 2, 2021
+:revnumber: 3.1
+:revremark: Updated for CloudHub 4.10
+:version-label: 3
+Trial document for learning AsciiDoc
+:reproducible:
+:author: Timm R. Bryant timmbryant@outlook.com
+:office: Home office.
+:sectnums:
+:sectanchors:
+:description: The document's description
+
+
+== First Section
+This #is a basic# $ `AsciiDoc` document by {firstname} {lastname} {email}. This paragraph _shows_ how {doctitle} is used to *format* AsciiDoc documents.
+
+
+=== First subsection
+This document contains two paragraphs. +
+It also has a header that specifies the document title.
+
+==== First subsection of a subsection
+
+type https://asciidoctor.org[AsciiDoc] into your browser
+
+----
+git <repo>
+----
+
+===== This is another level of nesting.
+
+.This is the Title of a Sidebar Block
+****
+This is the content of the sidebar block.
+****
+
+This is outside of the sidebar block.
+
+.This is the Title of a Code Block
+
+===== This is where I experiment with lists.
+. Step 1
+. Step 2
+.. Step a
+.. Step b
+. Step X
+
+// -
+
+[start=4]
+1. Step 1
+2. Step 2
+4. Step 4
+
+* [ ] This one
+* [x] That one
+* [ ] Not this either
+
+----
+var theDate as date
+var theTime as datetime
+----
+
+This is outside of the Code Block
+
+.This is the Title of a Delimited Block
+....
+from Github.com:asciidoctor/asciidoctor
+* branch        main -> FETCH_HEAD
+Already up to date.
+....
+
+This is outside of the delimited Block
+
+.This is the Title of a Block with Attributes
+[source,yaml]
+----
+image: node:16-buster
+stages: [ init, verify, deploy ]
+----
+
+.This is the Title of a non-delimited Block
+[sidebar]
+Mint has visions of global conquest.
+If you don't plant it in a container, it will take over your garden.
+
+This is outside of the non-delimited block.
+
+[#the-id-of-this-block]
+====
+Content of delimited example block
+====
+
+[quote#roads, Dr. Emmett Brown, Back to the Future]
+Roads? where we're going, we don't need roads.
+
+
+=== Second subsection
+
+==== Second subsection of a subsection
+
+[NOTE]
+This is a Note Block
+
+[IMPORTANT]
+This is an Important Block
+
+[WARNING]
+This is a Warning Block
+
+[CAUTION]
+This is a Caution block
+
+https://www.youtube.com[YouTube]
+
+WARNING: Don't pet the alligators.
+
+====
+This is an example of an outer nested Block
+=====
+This is what was nested.  My office is {office}
+=====
+And now I'm back to the outer block.
+====
+
+[%header%footer%autowidth,cols=2*~]
+|===
+|Cell A1|Cell B1
+
+|Cell A2  with really wide content |Cell B2
+
+|Cell A3 |Cell B3
+|===
+
+
+[.rolename]
+****
+This is a sidebar with a role assigned to it, rolename.
+****
